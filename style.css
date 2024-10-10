@@ -1,0 +1,442 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.container2 {
+  max-width: 1225px;
+  margin: auto;
+  padding: 10px 30px;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background-color: #f8f6f6;
+  font-family: sans-serif;
+}
+
+nav {
+  max-width: 1225px;
+  margin: auto;
+  padding: 10px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  height: 70px;
+}
+
+.logo {
+  color: #fff;
+}
+
+nav ul {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+nav ul li {
+  list-style-type: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333333;
+  transition: 0.3s;
+  font-weight: 500;
+  font-family: sans-serif;
+}
+
+nav ul li a:hover {
+  color: #647B64;
+}
+
+.menu-icon {
+  display: none;
+}
+
+.menu-icon i {
+  color: #fff;
+  font-size: 30px;
+}
+
+nav .button button {
+  all: unset;
+  background-color: #F35F2F;
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: white;
+}
+
+main header {
+  justify-content: space-between;
+  align-items: center;
+}
+main header .bg {
+  display: none;
+}
+main header h1 {
+  line-height: 50px;
+  font-weight: 500;
+}
+main header button {
+  position: relative;
+  width: 300px;
+  padding-top: 27px;
+  padding-left: 29px;
+  padding-bottom: 6px;
+  text-align: left;
+  font-weight: 900;
+  margin-top: 32px;
+}
+main header button span {
+  position: absolute;
+  right: 10px;
+  top: 30px;
+}
+main section {
+  position: relative;
+}
+main section .orqa {
+  position: absolute;
+}
+main section .section2 {
+  display: flex;
+  justify-content: space-between;
+}
+main section .section2 .chap {
+  width: 400px;
+}
+main section .section2 .ong {
+  display: flex;
+  gap: 20px;
+  width: 50%;
+  z-index: 99;
+  flex-wrap: wrap;
+}
+main section .section2 .ong .card1 {
+  width: 268px;
+  padding: 20px;
+  border-radius: 10px;
+  transition: 0.5s;
+}
+main section .section2 .ong .card1 i {
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  color: #647B64;
+  margin-bottom: 10px;
+  transition: 0.3s;
+}
+main section .section2 .ong .card1:hover {
+  background-color: white;
+}
+main section .section2 .ong .card1:hover i {
+  background-color: #647B64;
+  color: white;
+}
+main section .section2 button {
+  position: relative;
+  width: 300px;
+  padding-top: 27px;
+  padding-left: 29px;
+  padding-bottom: 6px;
+  text-align: left;
+  font-weight: 900;
+  margin-top: 32px;
+}
+main section .section2 button span {
+  position: absolute;
+  right: 10px;
+  top: 30px;
+}
+main .section3 {
+  position: relative;
+}
+main .section3 .orqa {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+main .section3 .sec3 h3, main .section3 .sec3 h2 {
+  text-transform: uppercase;
+}
+main .section3 .sec3 .cards {
+  flex-wrap: wrap;
+  gap: 20px;
+}
+main .section3 .sec3 .cards .card1 {
+  padding: 78px 50px;
+  border-radius: 10px;
+  margin-top: 30px;
+  width: 360px;
+  background-color: white;
+  transition: 0.3s;
+  z-index: 99;
+}
+main .section3 .sec3 .cards .card1 i {
+  color: #647B64;
+  font-size: 25px;
+  margin-bottom: 24px;
+}
+main .section3 .sec3 .cards .card1 p, main .section3 .sec3 .cards .card1 h3 {
+  transition: 0.3s;
+}
+main .section3 .sec3 .cards .card1:hover {
+  background-color: #647B64;
+}
+main .section3 .sec3 .cards .card1:hover i {
+  color: white;
+}
+main .section3 .sec3 .cards .card1:hover p, main .section3 .sec3 .cards .card1:hover h3 {
+  color: white;
+}
+main .section4 p {
+  text-transform: uppercase;
+}
+main .section4 button {
+  position: relative;
+  width: 300px;
+  padding-top: 27px;
+  padding-left: 29px;
+  padding-bottom: 6px;
+  text-align: left;
+  font-weight: 900;
+  margin-top: 32px;
+}
+main .section4 button span {
+  position: absolute;
+  right: 10px;
+  top: 30px;
+}
+main .section5 h4 {
+  text-transform: uppercase;
+}
+main .section5 .cards {
+  width: 100%;
+  flex-wrap: wrap;
+}
+main .section5 .cards .card1 {
+  position: relative;
+  width: 360px;
+  background-image: url(./img/gray.avif);
+  padding: 20px;
+  border-radius: 10px;
+}
+main .section5 .cards .card1 .pp {
+  position: absolute;
+  top: 30px;
+  right: 40px;
+}
+main footer {
+  padding: 20px;
+}
+main footer .footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+main footer .footer p {
+  margin-bottom: 12px;
+}
+main footer .footer i {
+  color: #647B64;
+  background-color: rgba(100, 123, 100, 0.1176470588);
+  padding: 10px;
+  font-size: 20px;
+  border-radius: 50%;
+}
+main footer .footer i:hover {
+  color: red;
+}
+main footer .footer button {
+  position: relative;
+  width: 280px;
+  padding: 15px;
+  text-align: left;
+  font-weight: 900;
+  margin-top: 32px;
+}
+main footer .footer button span {
+  position: absolute;
+  right: 10px;
+  top: 22px;
+}
+main footer .footer .one {
+  width: 250px;
+}
+main footer .footer .one img {
+  margin-bottom: 20px;
+}
+main footer .footer .one p {
+  font-size: 14px;
+}
+main footer .footer textarea {
+  padding: 5px;
+}
+
+@media (max-width: 1171px) {
+  main section .section2 .ong .card1 {
+    width: 80%;
+  }
+  main .section5 .cards {
+    justify-content: center;
+    gap: 20px;
+  }
+}
+@media (max-width: 900px) {
+  main .section4 {
+    flex-direction: column;
+  }
+  main footer .footer {
+    flex-direction: column;
+    text-align: center;
+  }
+  main footer .footer .one {
+    width: 100%;
+  }
+  main footer .footer .one img {
+    width: 20%;
+    margin: auto;
+  }
+  main footer .footer .one .ii {
+    justify-content: center;
+    margin-bottom: 15px;
+  }
+  main footer .footer h3 {
+    margin-top: 20px;
+  }
+  main footer .footer h4 {
+    margin-top: 20px;
+  }
+}
+@media (max-width: 850px) {
+  main section .section2 .ong .card1 {
+    width: 100%;
+  }
+}
+@media (max-width: 780px) {
+  nav ul {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    text-align: center;
+    background: #647B64;
+    gap: 0;
+    overflow: hidden;
+    z-index: 999;
+  }
+  nav ul li {
+    padding: 20px;
+    padding-top: 0;
+    padding-top: 10px;
+  }
+  nav ul li a {
+    color: #fff;
+  }
+  nav .menu-icon {
+    display: block;
+  }
+  nav .menu-icon i {
+    color: #000;
+  }
+  nav #menuList {
+    transition: all 0.5s;
+  }
+  nav .button {
+    display: none;
+  }
+  main header {
+    position: relative;
+    flex-direction: column;
+  }
+  main header .ri {
+    display: none !important;
+  }
+  main header .bg {
+    display: block;
+    position: absolute;
+  }
+  main header .ltt {
+    margin-top: 20px;
+  }
+  main section .orqa img {
+    width: 70%;
+  }
+  main section .section2 {
+    flex-direction: column;
+  }
+  main section .section2 .ong {
+    margin-top: 50px;
+    width: 100%;
+    justify-content: center;
+  }
+  main section .section2 .ong .card1 {
+    width: 45%;
+  }
+  main section .section2 .ong .card1 p {
+    font-size: 12px;
+  }
+  main section .section2 .ong .card1 h3 {
+    font-size: 16px;
+  }
+  main section .section2 .chap {
+    width: 100%;
+  }
+}
+@media (max-width: 750px) {
+  main footer .footer .one img {
+    width: 40%;
+    margin: auto;
+  }
+}
+@media (max-width: 650px) {
+  main footer .footer .one img {
+    width: 50%;
+    margin: auto;
+  }
+}
+@media (max-width: 600px) {
+  main header h1 {
+    font-size: 24px;
+    line-height: 45px;
+  }
+  main header p {
+    font-size: 12px;
+  }
+  main .section3 .sec3 .cards .card1 {
+    padding: 30px 20px;
+  }
+  main .section4 button {
+    width: 200px;
+  }
+}
+@media (max-width: 500px) {
+  main section .section2 .chap button {
+    width: 200px;
+  }
+  main .section5 {
+    margin-top: 30px;
+  }
+  main .section5 .b1 {
+    font-size: 14px;
+  }
+  main .section5 .b2 {
+    font-size: 22px;
+  }
+}
+@media (max-width: 420px) {
+  main .section5 .cards .card1 {
+    width: 100%;
+  }
+}/*# sourceMappingURL=style.css.map */
