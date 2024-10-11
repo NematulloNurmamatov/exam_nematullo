@@ -20,17 +20,23 @@ body {
 body {
     background-color: #f8f6f6;
     font-family: sans-serif;
+    position: relative;
 }
 
 nav {
     max-width: 1225px;
     margin: auto;
+    width: 100%;
     padding: 10px 30px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     position: relative;
     height: 70px;
+    position: fixed;
+    top: 0;
+    background-color: #f8f6f6;
+    z-index: 999;
 }
 
 .logo {
@@ -69,16 +75,24 @@ nav ul li a:hover {
 }
 
 nav {
-    .button {
-        button {
-            all: unset;
-            background-color: #F35F2F;
-            padding: 10px 20px;
-            border-radius: 5px;
-            color: white;
-        }
 
+    button {
+        all: unset;
+        // background-color: #F35F2F;
+        padding: 10px 20px;
+        border-radius: 5px;
+        color: white;
+        background-color: #647B64 ;
+        border: 1px solid #647B64;
+        cursor: pointer;
+        transition: .3s;
     }
+
+    button:hover {
+        background-color: transparent;
+        color: #647B64;
+    }
+
 }
 
 
@@ -105,12 +119,16 @@ main {
             text-align: left;
             font-weight: 900;
             margin-top: 32px;
-
+            background-color: #647B64;
+            border: 2px solid #647b641e;
             span {
                 position: absolute;
                 right: 10px;
                 top: 30px;
             }
+        }
+        button:hover {
+            color: #F3B562;
         }
     }
 
@@ -172,7 +190,8 @@ main {
                 text-align: left;
                 font-weight: 900;
                 margin-top: 32px;
-
+                background-color: #647B64;
+                transition: .3s;
                 span {
                     position: absolute;
                     right: 10px;
@@ -180,22 +199,31 @@ main {
                 }
             }
         }
+        button:hover {
+            color: #F3B562;
+        }
     }
 
     .section3 {
         position: relative;
+
         .orqa {
             position: absolute;
             right: 0;
             bottom: 0;
         }
+
         .sec3 {
-            h3, h2 {
+
+            h3,
+            h2 {
                 text-transform: uppercase;
             }
+
             .cards {
                 flex-wrap: wrap;
                 gap: 20px;
+
                 // justify-content: center;
                 .card1 {
                     padding: 78px 50px;
@@ -205,21 +233,28 @@ main {
                     background-color: white;
                     transition: 0.3s;
                     z-index: 99;
+
                     i {
                         color: #647B64;
                         font-size: 25px;
                         margin-bottom: 24px;
                     }
-                    p, h3 {
+
+                    p,
+                    h3 {
                         transition: .3s;
                     }
                 }
+
                 .card1:hover {
                     background-color: #647B64;
+
                     i {
                         color: white;
                     }
-                    p, h3 {
+
+                    p,
+                    h3 {
                         color: white;
                     }
                 }
@@ -231,6 +266,7 @@ main {
         p {
             text-transform: uppercase;
         }
+
         button {
             position: relative;
             width: 300px;
@@ -240,12 +276,16 @@ main {
             text-align: left;
             font-weight: 900;
             margin-top: 32px;
-
+            background-color: #647B64;
+            transition: .3s;
             span {
                 position: absolute;
                 right: 10px;
                 top: 30px;
             }
+        }
+        button:hover {
+            color: #F3B562;
         }
     }
 
@@ -253,15 +293,18 @@ main {
         h4 {
             text-transform: uppercase;
         }
+
         .cards {
             width: 100%;
             flex-wrap: wrap;
+
             .card1 {
                 position: relative;
                 width: 360px;
                 background-image: url(./img/gray.avif);
                 padding: 20px;
                 border-radius: 10px;
+
                 .pp {
                     position: absolute;
                     top: 30px;
@@ -273,13 +316,22 @@ main {
 
     footer {
         padding: 20px;
+
         .footer {
             width: 100%;
             display: flex;
             justify-content: space-between;
+
             p {
                 margin-bottom: 12px;
+                cursor: pointer;
+
             }
+
+            p:hover {
+                color: #F3B562;
+            }
+
             i {
                 color: #647B64;
                 background-color: #647b641e;
@@ -287,9 +339,11 @@ main {
                 font-size: 20px;
                 border-radius: 50%;
             }
+
             i:hover {
                 color: red;
             }
+
             button {
                 position: relative;
                 width: 280px;
@@ -297,28 +351,36 @@ main {
                 text-align: left;
                 font-weight: 900;
                 margin-top: 32px;
-    
+                background-color: #647B64;
+                transition: .3s;
                 span {
                     position: absolute;
                     right: 10px;
                     top: 22px;
                 }
             }
+            button:hover {
+                color: #F3B562;
+            }
+
             .one {
                 width: 250px;
+
                 img {
                     margin-bottom: 20px;
                 }
+
                 p {
                     font-size: 14px;
                 }
             }
+
             textarea {
                 padding: 5px;
             }
         }
     }
-}   
+}
 
 
 
@@ -346,6 +408,7 @@ main {
                 }
             }
         }
+
         .section5 {
             .cards {
                 justify-content: center;
@@ -360,24 +423,30 @@ main {
         .section4 {
             flex-direction: column;
         }
+
         footer {
             .footer {
                 flex-direction: column;
                 text-align: center;
+
                 .one {
                     width: 100%;
+
                     img {
                         width: 20%;
                         margin: auto;
                     }
+
                     .ii {
                         justify-content: center;
                         margin-bottom: 15px;
                     }
                 }
+
                 h3 {
                     margin-top: 20px;
                 }
+
                 h4 {
                     margin-top: 20px;
                 }
@@ -424,8 +493,14 @@ main {
                 a {
                     color: #fff;
                 }
+                a:hover {
+                    color: #F3B562;
+                }
 
             }
+        }
+        button:hover {
+            color: #F3B562;
         }
 
         .menu-icon {
@@ -540,9 +615,10 @@ main {
 
             p {
                 font-size: 12px;
-                
+
             }
         }
+
         .section3 {
             .sec3 {
                 .cards {
@@ -552,6 +628,7 @@ main {
                 }
             }
         }
+
         .section4 {
             button {
                 width: 200px;
@@ -571,11 +648,14 @@ main {
                 }
             }
         }
+
         .section5 {
             margin-top: 30px;
+
             .b1 {
                 font-size: 14px;
             }
+
             .b2 {
                 font-size: 22px;
             }

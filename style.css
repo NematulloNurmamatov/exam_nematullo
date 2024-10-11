@@ -20,17 +20,23 @@ body {
 body {
   background-color: #f8f6f6;
   font-family: sans-serif;
+  position: relative;
 }
 
 nav {
   max-width: 1225px;
   margin: auto;
+  width: 100%;
   padding: 10px 30px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   position: relative;
   height: 70px;
+  position: fixed;
+  top: 0;
+  background-color: #f8f6f6;
+  z-index: 999;
 }
 
 .logo {
@@ -68,12 +74,19 @@ nav ul li a:hover {
   font-size: 30px;
 }
 
-nav .button button {
+nav button {
   all: unset;
-  background-color: #F35F2F;
   padding: 10px 20px;
   border-radius: 5px;
   color: white;
+  background-color: #647B64;
+  border: 1px solid #647B64;
+  cursor: pointer;
+  transition: 0.3s;
+}
+nav button:hover {
+  background-color: transparent;
+  color: #647B64;
 }
 
 main header {
@@ -96,11 +109,16 @@ main header button {
   text-align: left;
   font-weight: 900;
   margin-top: 32px;
+  background-color: #647B64;
+  border: 2px solid rgba(100, 123, 100, 0.1176470588);
 }
 main header button span {
   position: absolute;
   right: 10px;
   top: 30px;
+}
+main header button:hover {
+  color: #F3B562;
 }
 main section {
   position: relative;
@@ -152,11 +170,16 @@ main section .section2 button {
   text-align: left;
   font-weight: 900;
   margin-top: 32px;
+  background-color: #647B64;
+  transition: 0.3s;
 }
 main section .section2 button span {
   position: absolute;
   right: 10px;
   top: 30px;
+}
+main section button:hover {
+  color: #F3B562;
 }
 main .section3 {
   position: relative;
@@ -166,7 +189,8 @@ main .section3 .orqa {
   right: 0;
   bottom: 0;
 }
-main .section3 .sec3 h3, main .section3 .sec3 h2 {
+main .section3 .sec3 h3,
+main .section3 .sec3 h2 {
   text-transform: uppercase;
 }
 main .section3 .sec3 .cards {
@@ -187,7 +211,8 @@ main .section3 .sec3 .cards .card1 i {
   font-size: 25px;
   margin-bottom: 24px;
 }
-main .section3 .sec3 .cards .card1 p, main .section3 .sec3 .cards .card1 h3 {
+main .section3 .sec3 .cards .card1 p,
+main .section3 .sec3 .cards .card1 h3 {
   transition: 0.3s;
 }
 main .section3 .sec3 .cards .card1:hover {
@@ -196,7 +221,8 @@ main .section3 .sec3 .cards .card1:hover {
 main .section3 .sec3 .cards .card1:hover i {
   color: white;
 }
-main .section3 .sec3 .cards .card1:hover p, main .section3 .sec3 .cards .card1:hover h3 {
+main .section3 .sec3 .cards .card1:hover p,
+main .section3 .sec3 .cards .card1:hover h3 {
   color: white;
 }
 main .section4 p {
@@ -211,11 +237,16 @@ main .section4 button {
   text-align: left;
   font-weight: 900;
   margin-top: 32px;
+  background-color: #647B64;
+  transition: 0.3s;
 }
 main .section4 button span {
   position: absolute;
   right: 10px;
   top: 30px;
+}
+main .section4 button:hover {
+  color: #F3B562;
 }
 main .section5 h4 {
   text-transform: uppercase;
@@ -246,6 +277,10 @@ main footer .footer {
 }
 main footer .footer p {
   margin-bottom: 12px;
+  cursor: pointer;
+}
+main footer .footer p:hover {
+  color: #F3B562;
 }
 main footer .footer i {
   color: #647B64;
@@ -264,11 +299,16 @@ main footer .footer button {
   text-align: left;
   font-weight: 900;
   margin-top: 32px;
+  background-color: #647B64;
+  transition: 0.3s;
 }
 main footer .footer button span {
   position: absolute;
   right: 10px;
   top: 22px;
+}
+main footer .footer button:hover {
+  color: #F3B562;
 }
 main footer .footer .one {
   width: 250px;
@@ -343,6 +383,12 @@ main footer .footer textarea {
   }
   nav ul li a {
     color: #fff;
+  }
+  nav ul li a:hover {
+    color: #F3B562;
+  }
+  nav button:hover {
+    color: #F3B562;
   }
   nav .menu-icon {
     display: block;
