@@ -24,36 +24,41 @@ body {
 }
 
 nav {
-    max-width: 1225px;
-    margin: auto;
-    width: 100%;
-    padding: 10px 30px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: relative;
-    height: 70px;
-    position: fixed;
-    top: 0;
     background-color: #f8f6f6;
+    position: fixed;
     z-index: 999;
+    top: 0;
+    width: 100%;
+    .nav {
+        max-width: 1225px;
+        margin: auto;
+        width: 100% !important;
+        padding: 10px 30px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+        height: 70px;
+        // position: sticky;
+        background-color: #f8f6f6;
+    }
 }
 
 .logo {
     color: #fff;
 }
 
-nav ul {
+.nav ul {
     display: flex;
     gap: 30px;
     align-items: center;
 }
 
-nav ul li {
+.nav ul li {
     list-style-type: none;
 }
 
-nav ul li a {
+.nav ul li a {
     text-decoration: none;
     color: #333333;
     transition: 0.3s;
@@ -61,7 +66,7 @@ nav ul li a {
     font-family: sans-serif;
 }
 
-nav ul li a:hover {
+.nav ul li a:hover {
     color: #647B64;
 }
 
@@ -74,7 +79,10 @@ nav ul li a:hover {
     font-size: 30px;
 }
 
-nav {
+.nav {
+    max-width: 1125px;
+    margin: auto !important;
+    width: 100%;
 
     button {
         all: unset;
@@ -82,7 +90,7 @@ nav {
         padding: 10px 20px;
         border-radius: 5px;
         color: white;
-        background-color: #647B64 ;
+        background-color: #647B64;
         border: 1px solid #647B64;
         cursor: pointer;
         transition: .3s;
@@ -121,12 +129,14 @@ main {
             margin-top: 32px;
             background-color: #647B64;
             border: 2px solid #647b641e;
+
             span {
                 position: absolute;
                 right: 10px;
                 top: 30px;
             }
         }
+
         button:hover {
             color: #F3B562;
         }
@@ -171,7 +181,7 @@ main {
                     }
                 }
 
-                
+
 
                 .card1:hover {
                     background-color: white;
@@ -195,6 +205,7 @@ main {
                 margin-top: 32px;
                 background-color: #647B64;
                 transition: .3s;
+
                 span {
                     position: absolute;
                     right: 10px;
@@ -202,6 +213,7 @@ main {
                 }
             }
         }
+
         button:hover {
             color: #F3B562;
         }
@@ -236,7 +248,9 @@ main {
                     background-color: white;
                     transition: 0.3s;
                     z-index: 99;
-                    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;                    i {
+                    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+
+                    i {
                         color: #647B64;
                         font-size: 25px;
                         margin-bottom: 24px;
@@ -280,12 +294,14 @@ main {
             margin-top: 32px;
             background-color: #647B64;
             transition: .3s;
+
             span {
                 position: absolute;
                 right: 10px;
                 top: 30px;
             }
         }
+
         button:hover {
             color: #F3B562;
         }
@@ -307,6 +323,7 @@ main {
                 padding: 20px;
                 border-radius: 10px;
                 box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+
                 // box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
                 .pp {
                     position: absolute;
@@ -356,12 +373,14 @@ main {
                 margin-top: 32px;
                 background-color: #647B64;
                 transition: .3s;
+
                 span {
                     position: absolute;
                     right: 10px;
                     top: 22px;
                 }
             }
+
             button:hover {
                 color: #F3B562;
             }
@@ -474,52 +493,55 @@ main {
 }
 
 @media (max-width:780px) {
-
     nav {
-        ul {
-            position: absolute;
-            top: 70px;
-            left: 0;
-            right: 0;
-            flex-direction: column;
-            text-align: center;
-            background: #647B64;
-            gap: 0;
-            overflow: hidden;
-            z-index: 999;
+        .nav {
+            ul {
+                position: absolute;
+                top: 70px;
+                left: 0;
+                right: 0;
+                flex-direction: column;
+                text-align: center;
+                background: #647B64;
+                gap: 0;
+                overflow: hidden;
+                z-index: 999;
 
-            li {
-                padding: 20px;
-                padding-top: 0;
-                padding-top: 10px;
+                li {
+                    padding: 20px;
+                    padding-top: 0;
+                    padding-top: 10px;
 
-                a {
-                    color: #fff;
+                    a {
+                        color: #fff;
+                    }
+
+                    a:hover {
+                        color: #F3B562;
+                    }
+
                 }
-                a:hover {
-                    color: #F3B562;
+            }
+
+            button:hover {
+                color: #F3B562;
+            }
+
+            .menu-icon {
+                display: block;
+
+                i {
+                    color: #000;
                 }
-
             }
-        }
-        button:hover {
-            color: #F3B562;
-        }
 
-        .menu-icon {
-            display: block;
-
-            i {
-                color: #000;
+            #menuList {
+                transition: all 0.5s;
             }
-        }
 
-        #menuList {
-            transition: all 0.5s;
-        }
-
-        .button {
-            display: none;
+            .button {
+                display: none;
+            }
         }
     }
 
