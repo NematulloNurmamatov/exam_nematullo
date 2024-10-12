@@ -159,6 +159,7 @@ main {
                     padding: 20px;
                     border-radius: 10px;
                     transition: .5s;
+                    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
 
                     i {
                         background-color: #fff;
@@ -169,6 +170,8 @@ main {
                         transition: .3s;
                     }
                 }
+
+                
 
                 .card1:hover {
                     background-color: white;
@@ -233,8 +236,7 @@ main {
                     background-color: white;
                     transition: 0.3s;
                     z-index: 99;
-
-                    i {
+                    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;                    i {
                         color: #647B64;
                         font-size: 25px;
                         margin-bottom: 24px;
@@ -304,7 +306,8 @@ main {
                 background-image: url(./img/gray.avif);
                 padding: 20px;
                 border-radius: 10px;
-
+                box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+                // box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
                 .pp {
                     position: absolute;
                     top: 30px;
